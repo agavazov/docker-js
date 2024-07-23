@@ -1,0 +1,17 @@
+{
+  "name": "docker-js",
+  "version": "0.0.1",
+  "author": "Alexander Gavazov",
+  "private": true,
+  "license": "MIT",
+  "homepage": "https://github.com/agavazov/docker-js",
+  "workspaces": [
+    "./packages/*"
+  ],
+  "scripts": {
+    "start-api": "npm --prefix packages/api run start",
+    "build-api": "npm --prefix packages/api run build",
+    "start-client": "npm --prefix packages/client run start",
+    "build-client": "npm --prefix packages/client run build"
+  }
+}
